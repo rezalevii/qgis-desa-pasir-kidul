@@ -1,0 +1,1 @@
+var json_Terminal_19 = {"type":"FeatureCollection","name":"Terminal_19","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Terminal"},"geometry":{"type":"Point","coordinates":[109.200164792653112,-7.419309015211971]}}]}

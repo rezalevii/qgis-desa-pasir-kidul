@@ -1,0 +1,1 @@
+var json_Kolam_22 = {"type":"FeatureCollection","name":"Kolam_22","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","nama":"Kolam Renang Bnayu Bnening"},"geometry":{"type":"Point","coordinates":[109.202347809322831,-7.415408193018282]}}]}
