@@ -30,6 +30,76 @@
     width: 100%;
     height: 70vh; /* Mengambil 70% dari tinggi viewport */
 }
+		/*==================================================================================*/
+/* General styles for navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide menu on small screens */
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: block; /* Show menu when activated */
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: block; /* Show hamburger icon */
+    }
+}
+/*=============================================================================================*/
 
 /* Konten lainnya tetap sama */
 	 /* Reset CSS */
@@ -323,6 +393,15 @@
         <script src="data/Apotek_21.js"></script>
         <script src="data/Kolam_22.js"></script>
         <script>
+
+		/*==================================================================================*/
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active'); // Toggles the active class on/off
+}
+
+		/*==================================================================================*/
+		
 		function searchContent() {
             const query = document.getElementById('search-input').value.toLowerCase();
             const sections = document.querySelectorAll('.content-section');
